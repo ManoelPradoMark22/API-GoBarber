@@ -3,7 +3,6 @@ import * as Yup from 'yup';
 import User from '../models/User';
 
 class UserController {
-  // eslint-disable-next-line class-methods-use-this
   async store(req, res) {
     // só pode ter um store por controller
 
@@ -36,7 +35,6 @@ class UserController {
   }
 
   // acessada apenas para usuarios LOGADOS!
-  // eslint-disable-next-line class-methods-use-this
   async update(req, res) {
     const schema = Yup.object().shape({
       name: Yup.string(),
@@ -65,8 +63,7 @@ class UserController {
 
     const user = await User.findByPk(req.userId);
 
-    // eslint-disable-next-line eqeqeq
-    if (email != user.email) {
+    if (email !== user.email) {
       const userExists = await User.findOne({ where: { email } });
 
       if (userExists) {
