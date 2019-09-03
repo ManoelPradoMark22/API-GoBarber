@@ -40,6 +40,14 @@ class User extends Model {
     return this;
   }
 
+  static associate(models) {
+    this.belongsTo(models.File, {
+      foreignKey: 'avatar_id', // na coluna 'avatar_id'
+      as: 'avatar', // codinome
+    }); /* teremos um id de arquivo armazenado
+    dentro da tabela de usuario  */
+  }
+
   checkPassword(password) {
     /* bcrypt.compare retorna true caso as senhas sejam iguais */
     return bcrypt.compare(password, this.password_hash);
