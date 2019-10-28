@@ -2,6 +2,7 @@ import 'dotenv/config';
 
 import express from 'express';
 import path from 'path';
+import cors from 'cors';
 import Youch from 'youch';
 import * as Sentry from '@sentry/node';
 import 'express-async-errors';
@@ -24,6 +25,12 @@ class App {
 
   middlewares() {
     this.server.use(Sentry.Handlers.requestHandler());
+    /* setando o cors, sem especificar, permite o acesso da nossa api de qualquer
+    aplicacao. Pra ambiente de desenvolvimento isso é tranquilo */
+    this.server.use(cors());
+    /* quando estivermos em ambiente de produção, podemos permitir quando
+    aplicacoes desses endereços acessar nossa aplicacao, ai em produção usamos:
+     exemplo: this.server.use(cors({ origin: 'https://rocketseat.com.br' })); */
     this.server.use(express.json());
     this.server.use(
       '/files',
