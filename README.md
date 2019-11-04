@@ -36,3 +36,10 @@ yarn dev
 yarn start
 </li>
 </ul>
+
+# INSOMNIA
+<ul>
+  <li>Caso não tenha instalado, instale o <a href="https://insomnia.rest/">Insomnia</a>; </li>
+  <li>Com o programa aberto, vá em Application/preferences/data/importData e faça o import do arquivo <a href="https://github.com/ManoelPradoMark22/API-GoBarber/blob/master/Insomnia_goBarber.json">Insomnia_goBarber.json</a>;</li>
+  <li>Obs: sempre que fizer login na API, copie o token gerado, vá em NoEnvironment/ManageEnvironments e cole o token no local especificado.</li>
+</ul>
