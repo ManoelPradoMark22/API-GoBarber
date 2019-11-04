@@ -11,7 +11,7 @@ docker run --name mongobarber -p 27017:27017 -d -t mongo
 <br />
 docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
 </li>
-<li>Para ver se os conteiners estão rodando execute:
+<li>Para ver se os containers estão rodando execute:
 <br />
 docker ps
 <br />
