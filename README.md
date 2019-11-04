@@ -11,7 +11,7 @@ yarn
 <br />
 docker ps (para ver se os conteiners gobarber, mongobarber e redisbarber estão em execução)
 <br />
-Caso não estejam execute docker ps -a (para ver se os conteiners citados anteriormente foram criados).
+Caso não estejam, execute docker ps -a (para ver se os conteiners citados anteriormente foram criados).
 </li>
 <li>Caso não existam tais conteiners, crie os containers executando, na raíz do projeto, cada comando a seguir:
 <br />
