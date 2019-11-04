@@ -27,13 +27,9 @@ Isso irá iniciar o container em questão.
 <br />
 yarn queue
 </li>
-<li>Em outro terminal, na raíz do projeto, execute:
+<li>E por fim, em outro terminal e também na raíz do projeto, execute:
 <br />
 yarn dev
-</li>
-<li>E, por fim, em outro terminal, também na raíz do projeto, execute:
-<br />
-yarn start
 </li>
 </ul>
 
