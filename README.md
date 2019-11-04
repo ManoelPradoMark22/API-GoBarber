@@ -31,7 +31,7 @@ yarn queue
 <br />
 yarn dev
 </li>
-<li>?E, por fim, em outro terminal, também na raíz do projeto, execute:
+<li>E, por fim, em outro terminal, também na raíz do projeto, execute:
 <br />
 yarn start
 </li>
