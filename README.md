@@ -2,9 +2,13 @@
 ## API da aplicação GoBarber, desenvolvida durante o Bootcamp da Rocketseat. Tem como função agendamento de horário para corte de cabelo.
 Para a aplicação funcionar, siga os passos:
 <ul>
+<li>Para adicionar as dependências, execute:
+<br />
+yarn
+</li>
 <li>Caso não tenha instalado, instale o <a href="https://docs.docker.com/docker-for-windows/install/">Docker</a> na sua máquina e o inicie;</li>
 <li>Crie os containers executando, na raíz do projeto, cada comando a seguir:
-<br />
+
 docker run --name gobarber -e POSTGRES_PASSWORD=sua_senha_aqui -p 5432:5432 -d postgres
 <br />
 docker run --name mongobarber -p 27017:27017 -d -t mongo
