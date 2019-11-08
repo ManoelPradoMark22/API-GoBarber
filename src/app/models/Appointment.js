@@ -5,6 +5,8 @@ class Appointment extends Model {
   static init(sequelize) {
     super.init(
       {
+        user_id: Sequelize.INTEGER,
+        provider_id: Sequelize.INTEGER,
         date: Sequelize.DATE,
         canceled_at: Sequelize.DATE,
         past: {
