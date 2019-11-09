@@ -1,5 +1,6 @@
 # API GoBarber ![logo](logo-purple.svg)
 ## API da aplicação GoBarber, desenvolvida durante o Bootcamp GoStack da Rocketseat. Tem como função agendamento de horário para corte de cabelo.
+### Esta API foi feita para ser consumida pelo front-end <a href="https://github.com/ManoelPradoMark22/app-Gobarber-WEB">WEB</a> e Mobile (basta clicar para ser redirecionado aos respectivos repositórios).
 Para a aplicação funcionar, siga os passos:
 <ul>
 <li>Caso não tenha instalado, instale o <a href="https://docs.docker.com/docker-for-windows/install/">Docker</a> na sua máquina e o inicie;</li>
