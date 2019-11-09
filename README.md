@@ -1,4 +1,4 @@
-# API GoBarber
+# API GoBarber ![logo](logo-purple.svg)
 ## API da aplicação GoBarber, desenvolvida durante o Bootcamp da Rocketseat. Tem como função agendamento de horário para corte de cabelo.
 Para a aplicação funcionar, siga os passos:
 <ul>
