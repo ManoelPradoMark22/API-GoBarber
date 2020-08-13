@@ -64,6 +64,9 @@ class UserController {
 
     const user = await User.findByPk(req.userId);
 
+    /* ERRATA: O CERTO SERIA: if (email && email !== user.email){....
+      pq ai vai fazer a verificacao do email se o usuario preencher o email novo para edicao
+      */
     if (email !== user.email) {
       const userExists = await User.findOne({ where: { email } });
 
